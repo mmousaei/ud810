@@ -16,9 +16,10 @@ int main() {
 
     imwrite("circle2.png", circle);
     imwrite("line2.png", line);
-    imwrite("combined2.png", combine);
+
 
     combine = (line/2) + (circle/2);
+    imwrite("combined2.png", combine);
     process.showImage(combine, "Lines and Circles");
     waitKey(0);
     return 0;
